@@ -9,16 +9,16 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 px-6" id="about">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" id="about">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold font-retro mb-4">
-            <span className="text-terminal">About</span> <span className="text-amber">Me</span>
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-retro mb-4">
+            <span className="text-primary">About</span> <span className="text-secondary">Me</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Column - About Text */}
           <div className="mac-window">
             <div className="mac-titlebar">
@@ -68,7 +68,7 @@ const About = () => {
           </div>
 
           {/* Right Column - Skills Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
             {skills.map((category, index) => (
               <div
                 key={category.name}
@@ -83,15 +83,15 @@ const About = () => {
                   </div>
                 </div>
                 
-                <div className="p-6 text-center">
-                  <category.icon className="w-8 h-8 text-primary mx-auto mb-4" />
-                  <h3 className="font-retro font-medium text-lg mb-4 text-terminal">
+                <div className="p-4 lg:p-6 text-center">
+                  <category.icon className="w-6 h-6 lg:w-8 lg:h-8 text-primary mx-auto mb-3 lg:mb-4" />
+                  <h3 className="font-retro font-medium text-base lg:text-lg mb-3 lg:mb-4 text-primary">
                     {category.name}
                   </h3>
-                  <div className="space-y-2">
+                  <div className="space-y-1 lg:space-y-2">
                     {category.items.map((item) => (
-                      <div key={item} className="font-mono text-sm text-muted-foreground">
-                        <span className="text-amber">•</span> {item}
+                      <div key={item} className="font-mono text-xs lg:text-sm text-muted-foreground">
+                        <span className="text-secondary">•</span> {item}
                       </div>
                     ))}
                   </div>

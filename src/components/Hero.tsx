@@ -19,37 +19,37 @@ const Hero = () => {
   }, [currentIndex, fullText]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 relative overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
-      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
         {/* Left Column - Text Content */}
-        <div className="space-y-8 animate-fade-in-up">
+        <div className="space-y-6 lg:space-y-8 animate-fade-in-up text-center lg:text-left">
           <div className="space-y-4">
-            <h1 className="text-4xl lg:text-6xl font-bold font-retro">
-              <span className="text-terminal block">Welcome to</span>
-              <span className="text-amber block">My Portfolio</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-retro leading-tight">
+              <span className="text-primary block">Welcome to</span>
+              <span className="text-secondary block">My Portfolio</span>
             </h1>
             
-            <div className="terminal p-6 max-w-lg">
-              <div className="text-terminal text-lg">
+            <div className="terminal p-4 sm:p-6 max-w-lg mx-auto lg:mx-0">
+              <div className="text-terminal text-base lg:text-lg">
                 {displayText}
                 <span className="animate-terminal-blink">|</span>
               </div>
             </div>
           </div>
 
-          <div className="space-y-4">
-            <p className="text-lg text-muted-foreground font-mono leading-relaxed">
+          <div className="space-y-4 lg:space-y-6">
+            <p className="text-base lg:text-lg text-muted-foreground font-mono leading-relaxed max-w-xl mx-auto lg:mx-0">
               Crafting digital experiences with the precision of classic computing 
               and the innovation of modern development.
             </p>
             
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button className="retro-button pixel-hover">
                 View Projects
               </Button>
@@ -61,8 +61,8 @@ const Hero = () => {
         </div>
 
         {/* Right Column - Retro Computer Window */}
-        <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          <div className="mac-window max-w-md mx-auto">
+        <div className="animate-fade-in-up order-first lg:order-last" style={{ animationDelay: '0.3s' }}>
+          <div className="mac-window max-w-sm sm:max-w-md mx-auto">
             <div className="mac-titlebar">
               <div className="mac-buttons">
                 <div className="mac-button mac-button-red"></div>
@@ -70,13 +70,13 @@ const Hero = () => {
                 <div className="mac-button mac-button-green"></div>
               </div>
               <div className="flex-1 text-center">
-                <span className="text-sm font-mono text-muted-foreground">
+                <span className="text-xs sm:text-sm font-mono text-muted-foreground">
                   Terminal - portfolio.exe
                 </span>
               </div>
             </div>
             
-            <div className="terminal min-h-[300px] space-y-2">
+            <div className="terminal min-h-[250px] sm:min-h-[300px] space-y-1 sm:space-y-2 text-xs sm:text-sm">
               <div className="text-terminal">$ whoami</div>
               <div className="text-amber">Full Stack Developer</div>
               <div className="text-terminal">$ ls skills/</div>

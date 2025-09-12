@@ -44,19 +44,19 @@ const Projects = () => {
   };
 
   return (
-    <section className="py-20 px-6" id="projects">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" id="projects">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold font-retro mb-4">
-            <span className="text-terminal">Featured</span> <span className="text-amber">Projects</span>
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-retro mb-4">
+            <span className="text-primary">Featured</span> <span className="text-secondary">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-          <p className="text-muted-foreground font-mono max-w-2xl mx-auto">
+          <p className="text-muted-foreground font-mono max-w-2xl mx-auto text-sm lg:text-base">
             A collection of projects that blend retro aesthetics with modern functionality
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <div
               key={project.title}

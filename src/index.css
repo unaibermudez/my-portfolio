@@ -9,22 +9,22 @@
   :root {
     /* Retro Apple Color Palette */
     --background: 48 15% 95%; /* Classic Mac beige */
-    --foreground: 0 0% 8%; /* Deep charcoal */
+    --foreground: 0 0% 15%; /* Darker for better readability */
 
     --card: 48 20% 98%; /* Cream white */
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 0 0% 15%;
 
     --popover: 48 20% 98%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 120 100% 50%; /* Terminal green */
-    --primary-foreground: 0 0% 8%;
+    --primary: 120 80% 35%; /* Darker terminal green for better contrast */
+    --primary-foreground: 48 20% 98%;
 
-    --secondary: 40 100% 50%; /* Amber terminal */
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 35 90% 45%; /* Darker amber for better readability */
+    --secondary-foreground: 48 20% 98%;
 
     --muted: 48 8% 88%; /* Light beige */
-    --muted-foreground: 0 0% 45%;
+    --muted-foreground: 0 0% 25%; /* Darker for better readability */
 
     --accent: 48 25% 85%; /* Warm beige */
     --accent-foreground: 0 0% 8%;
@@ -41,8 +41,8 @@
     
     /* Terminal colors */
     --terminal-bg: 0 0% 8%;
-    --terminal-green: 120 100% 50%;
-    --terminal-amber: 40 100% 50%;
+    --terminal-green: 120 80% 40%; /* Better contrast */
+    --terminal-amber: 35 90% 50%; /* Better contrast */
     
     /* Mac window styling */
     --window-bg: 48 15% 92%;
@@ -80,25 +80,25 @@
   .dark {
     /* Dark retro mode (like classic terminal) */
     --background: 0 0% 8%;
-    --foreground: 120 100% 50%;
+    --foreground: 120 70% 70%; /* Better contrast in dark mode */
 
     --card: 0 0% 10%;
-    --card-foreground: 120 100% 50%;
+    --card-foreground: 120 70% 70%;
 
     --popover: 0 0% 10%;
-    --popover-foreground: 120 100% 50%;
+    --popover-foreground: 120 70% 70%;
 
-    --primary: 120 100% 50%;
+    --primary: 120 80% 60%; /* Brighter for dark mode visibility */
     --primary-foreground: 0 0% 8%;
 
-    --secondary: 40 100% 50%;
+    --secondary: 35 90% 60%; /* Better amber for dark mode */
     --secondary-foreground: 0 0% 8%;
 
     --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted-foreground: 0 0% 75%; /* Better contrast */
 
     --accent: 0 0% 15%;
-    --accent-foreground: 120 100% 50%;
+    --accent-foreground: 120 70% 70%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 8%;

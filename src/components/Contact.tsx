@@ -13,19 +13,19 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-6" id="contact">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" id="contact">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold font-retro mb-4">
-            <span className="text-terminal">Get In</span> <span className="text-amber">Touch</span>
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-retro mb-4">
+            <span className="text-primary">Get In</span> <span className="text-secondary">Touch</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-          <p className="text-muted-foreground font-mono max-w-2xl mx-auto">
+          <p className="text-muted-foreground font-mono max-w-2xl mx-auto text-sm lg:text-base">
             Ready to collaborate? Let's build something amazing together.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <div className="mac-window">
             <div className="mac-titlebar">
