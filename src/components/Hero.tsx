@@ -26,7 +26,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroImage})` }}
       />
 
-      <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 px-2 sm:px-4">
+      <div className="container max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 px-2 sm:px-4">
         {/* Left Column - Text Content */}
         <div className="space-y-6 lg:space-y-8 animate-fade-in-up text-center lg:text-left">
           <div className="space-y-4">

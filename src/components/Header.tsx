@@ -21,22 +21,22 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-border">
-      <div className="mac-window mx-4 mt-4 overflow-visible">
-        <div className="mac-titlebar">
+    <header className="fixed max-w-7xl mx-auto top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-border">
+      <div className="mac-window mt-4 mx-4 overflow-visible ">
+        <div className="mac-titlebar rounded-sm">
           <div className="mac-buttons">
             <div className="mac-button mac-button-red"></div>
             <div className="mac-button mac-button-yellow"></div>
             <div className="mac-button mac-button-green"></div>
           </div>
           <div className="flex-1 text-center">
-            <span className="text-sm font-mono text-muted-foreground">
+            <span className="text-xs sm:text-sm md:text-base font-mono text-muted-foreground">
               Portfolio v2.1 - Navigator
             </span>
           </div>
         </div>
         
-        <nav className="px-6 py-4">
+        <nav className="px-3 py-2 md:px-6 md:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
