@@ -2,14 +2,13 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
-import { Mail, Github, Linkedin, Twitter, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 
 const Contact = () => {
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: '#', username: '@username' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#', username: '/in/username' },
-    { icon: Twitter, label: 'Twitter', href: '#', username: '@username' },
-    { icon: Mail, label: 'Email', href: 'mailto:hello@example.com', username: 'hello@example.com' },
+    { icon: Github, label: 'GitHub', href: '#', username: '@unaibermudez' },
+    { icon: Linkedin, label: 'LinkedIn', href: '#', username: '/in/unaibermudez' },
+    { icon: Mail, label: 'Email', href: 'mailto:unai@example.com', username: 'unai@example.com' },
   ];
 
   return (
@@ -21,7 +20,7 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground font-mono max-w-2xl mx-auto text-sm lg:text-base">
-            Ready to collaborate? Let's build something amazing together.
+            Ready to collaborate? Let's discuss opportunities in software engineering and AI.
           </p>
         </div>
 
@@ -90,9 +89,9 @@ const Contact = () => {
                 <div className="text-terminal">$ whoami --contact</div>
                 <div className="text-amber">Available for new opportunities</div>
                 <div className="text-terminal">$ location</div>
-                <div className="text-amber">Remote / Your City</div>
+                <div className="text-amber">Bilbao, Spain</div>
                 <div className="text-terminal">$ timezone</div>
-                <div className="text-amber">UTC-5 (EST)</div>
+                <div className="text-amber">CET (UTC+1)</div>
                 <div className="text-terminal">$ preferred_contact</div>
                 <div className="text-amber">Email, LinkedIn, or GitHub</div>
                 <div className="text-terminal terminal-cursor">$ </div>
@@ -100,7 +99,7 @@ const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {socialLinks.map((social) => (
                 <Card 
                   key={social.label}

@@ -42,7 +42,7 @@ const Header = () => {
             <div className="flex items-center space-x-2">
               <Terminal className="w-6 h-6 text-primary" />
               <span className="font-retro font-bold text-lg text-terminal">
-                Dev.Portfolio
+                Unai.Dev
               </span>
             </div>
 

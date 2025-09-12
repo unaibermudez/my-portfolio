@@ -3,9 +3,9 @@ import { Code, Coffee, Gamepad2, Monitor } from 'lucide-react';
 const About = () => {
   const skills = [
     { name: 'Frontend', icon: Monitor, items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'] },
-    { name: 'Backend', icon: Code, items: ['Node.js', 'Python', 'PostgreSQL', 'REST APIs'] },
-    { name: 'Tools', icon: Coffee, items: ['Git', 'Docker', 'VS Code', 'Figma'] },
-    { name: 'Interests', icon: Gamepad2, items: ['Open Source', 'AI/ML', 'Game Dev', 'Retro Tech'] },
+    { name: 'Backend', icon: Code, items: ['Java', 'Spring Boot', 'PostgreSQL', 'Prisma'] },
+    { name: 'Tools', icon: Coffee, items: ['Git', 'Docker/Podman', 'CI/CD', 'Redux'] },
+    { name: 'Learning', icon: Gamepad2, items: ['AI/ML', 'Cybersecurity', 'ROS2', 'Python'] },
   ];
 
   return (
@@ -38,24 +38,24 @@ const About = () => {
               <div className="space-y-4 font-mono text-sm leading-relaxed">
                 <div>
                   <span className="text-terminal"># </span>
-                  <span className="text-amber">Developer Story</span>
+                  <span className="text-amber">Education & Background</span>
                 </div>
                 
                 <p className="text-muted-foreground pl-4">
-                  Started my journey in the golden age of computing, inspired by the elegance 
-                  of classic Apple design and the power of clean code. I believe great software 
-                  should be both functional and beautiful.
+                  BSc in Computer Engineering from UPV/EHU (University of the Basque Country). 
+                  Final Year Project: SkillAtlas - a web platform for CV and knowledge management 
+                  in consulting firms, built with Spring Boot, React, and PostgreSQL.
                 </p>
                 
                 <div>
                   <span className="text-terminal">## </span>
-                  <span className="text-amber">Philosophy</span>
+                  <span className="text-amber">Professional Journey</span>
                 </div>
                 
                 <p className="text-muted-foreground pl-4">
-                  Every line of code tells a story. I craft digital experiences that blend 
-                  retro aesthetics with modern functionality, creating software that feels 
-                  familiar yet innovative.
+                  Software Engineering Intern at LKS NEXT (2024-2025), working on projects like 
+                  Metaposta, Hazi, and Euskalmet. Previously contributed to Formula Student Bizkaia 
+                  developing path-planning algorithms for autonomous driving with Python and ROS2.
                 </p>
                 
                 <div className="pt-4 border-t border-border">

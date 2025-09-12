@@ -5,40 +5,40 @@ import { ExternalLink, Github, Terminal } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'RetroOS Dashboard',
-      description: 'A nostalgic dashboard inspired by classic operating systems',
-      tech: ['React', 'TypeScript', 'CSS Grid'],
+      title: 'SkillAtlas',
+      description: 'Web platform for CV and knowledge management in consulting firms (Final Year Project)',
+      tech: ['Spring Boot', 'React', 'PostgreSQL'],
       type: 'Web App',
-      status: 'Active'
-    },
-    {
-      title: 'Terminal Portfolio',
-      description: 'Interactive command-line interface portfolio',
-      tech: ['JavaScript', 'Node.js', 'ASCII Art'],
-      type: 'CLI Tool',
       status: 'Complete'
     },
     {
-      title: 'Pixel Art Generator',
-      description: 'Create retro-style pixel art with modern tools',
-      tech: ['React', 'Canvas API', 'WebGL'],
-      type: 'Creative Tool',
-      status: 'Beta'
+      title: 'ShopUnai',
+      description: 'Full-featured e-commerce platform with authentication and state management',
+      tech: ['Next.js', 'PostgreSQL', 'Prisma', 'NextAuth'],
+      type: 'E-commerce',
+      status: 'Active'
     },
     {
-      title: 'Classic Mac Simulator',
-      description: 'Web-based simulation of classic Macintosh interface',
-      tech: ['Vue.js', 'CSS Animations', 'Web APIs'],
-      type: 'Simulation',
-      status: 'Active'
+      title: 'Formula Student AI',
+      description: 'Path-planning algorithms for autonomous driving in Formula Student competition',
+      tech: ['Python', 'ROS2', 'AI/ML'],
+      type: 'Autonomous Systems',
+      status: 'Complete'
+    },
+    {
+      title: 'Data Science Projects',
+      description: 'Titanic survival prediction, coinfection analysis, and cheminformatics models',
+      tech: ['Python', 'Machine Learning', 'Data Analysis'],
+      type: 'Data Science',
+      status: 'Portfolio'
     }
   ];
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'Active': return 'text-primary';
       case 'Complete': return 'text-secondary';
-      case 'Beta': return 'text-amber';
+      case 'Portfolio': return 'text-amber';
+      case 'Active': return 'text-primary';
       default: return 'text-muted-foreground';
     }
   };
@@ -52,7 +52,7 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground font-mono max-w-2xl mx-auto text-sm lg:text-base">
-            A collection of projects that blend retro aesthetics with modern functionality
+            A selection of projects showcasing full-stack development, AI, and data science skills
           </p>
         </div>
 

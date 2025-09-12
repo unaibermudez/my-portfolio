@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Terminal className="w-5 h-5 text-primary" />
                 <span className="font-retro text-terminal">
-                  © {new Date().getFullYear()} Developer Portfolio
+                  © {new Date().getFullYear()} Unai Bermúdez
                 </span>
               </div>
               

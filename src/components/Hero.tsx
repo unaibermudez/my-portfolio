@@ -6,7 +6,7 @@ import heroImage from "@/assets/retro-hero.jpg";
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "> Hello, I'm a developer_";
+  const fullText = "> Hello, I'm Unai Bermúdez_";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="space-y-4">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-retro leading-tight">
               <span className="text-primary block">Welcome to</span>
-              <span className="text-secondary block">My Portfolio</span>
+              <span className="text-secondary block">Unai's Portfolio</span>
             </h1>
 
             <div className="terminal p-4 sm:p-6 max-w-lg mx-auto lg:mx-0">
@@ -45,8 +45,8 @@ const Hero = () => {
 
           <div className="space-y-4 lg:space-y-6">
             <p className="text-base lg:text-lg text-muted-foreground font-mono leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Crafting digital experiences with the precision of classic
-              computing and the innovation of modern development.
+              Computer Science graduate passionate about software engineering, AI, and cybersecurity.
+              Starting as Junior Software Engineer at LKS NEXT in September 2025.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -81,12 +81,12 @@ const Hero = () => {
 
             <div className="terminal min-h-[250px] sm:min-h-[300px] space-y-1 sm:space-y-2 text-xs sm:text-sm">
               <div className="text-terminal">$ whoami</div>
-              <div className="text-amber">Full Stack Developer</div>
+              <div className="text-amber">Computer Science Graduate</div>
               <div className="text-terminal">$ ls skills/</div>
-              <div className="text-amber">React TypeScript Node.js Python</div>
+              <div className="text-amber">Java Spring-Boot React TypeScript</div>
               <div className="text-terminal">$ cat experience.txt</div>
               <div className="text-amber">
-                5+ years building web applications
+                Software Engineering Intern at LKS NEXT
               </div>
               <div className="text-terminal">$ ./portfolio --show-projects</div>
               <div className="text-amber">Loading projects...</div>
