@@ -19,14 +19,14 @@ const Hero = () => {
   }, [currentIndex, fullText]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-40 lg:py-12 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pb-20 pt-40 lg:py-12 relative overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
 
-      <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 px-2 sm:px-4">
         {/* Left Column - Text Content */}
         <div className="space-y-6 lg:space-y-8 animate-fade-in-up text-center lg:text-left">
           <div className="space-y-4">
@@ -97,7 +97,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute inset-x-0 bottom-8 flex justify-center animate-bounce">
         <ChevronDown className="w-6 h-6 text-muted-foreground" />
       </div>
     </section>
