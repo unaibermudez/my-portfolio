@@ -2,8 +2,8 @@ import { Terminal, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="py-12 px-6 border-t border-border">
-      <div className="container mx-auto">
+    <footer className="py-12 px-4 md:px-6 border-t border-border">
+      <div className="container mx-auto px-2 sm:px-4">
         <div className="terminal p-8 max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-sm">
             {/* Left Column */}
@@ -19,7 +19,7 @@ const Footer = () => {
               <div className="text-terminal">$ echo $TECH_STACK</div>
               <div className="text-amber">React + TypeScript</div>
               <div className="text-amber">Tailwind CSS</div>
-              <div className="text-amber">Vite + Lovable</div>
+              <div className="text-amber">Vite</div>
             </div>
 
             {/* Right Column */}

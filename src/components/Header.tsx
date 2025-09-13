@@ -31,7 +31,7 @@ const Header = () => {
           </div>
           <div className="flex-1 text-center">
             <span className="text-xs sm:text-sm md:text-base font-mono text-muted-foreground">
-              Portfolio v2.1 - Navigator
+              Portfolio v1.1 - Navigator
             </span>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Header = () => {
             <div className="flex items-center space-x-2">
               <Terminal className="w-6 h-6 text-primary" />
               <span className="font-retro font-bold text-lg text-terminal">
-                Dev.Portfolio
+                Unai.Portfolio
               </span>
             </div>
 

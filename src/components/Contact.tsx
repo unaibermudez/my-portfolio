@@ -6,15 +6,14 @@ import { Mail, Github, Linkedin, Twitter, Send } from 'lucide-react';
 
 const Contact = () => {
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: '#', username: '@username' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#', username: '/in/username' },
-    { icon: Twitter, label: 'Twitter', href: '#', username: '@username' },
-    { icon: Mail, label: 'Email', href: 'mailto:hello@example.com', username: 'hello@example.com' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/unaibermudez', username: '@unaibermudez' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/unai-bermudez-osaba/', username: '/in/unai-bermudez-osaba' },
+    { icon: Mail, label: 'Email', href: 'mailto:ubermudez001@gmail.com', username: 'ubermudez001@gmail.com' },
   ];
 
   return (
     <section className="py-12 max-w-7xl mx-auto sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" id="contact">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-2 sm:px-4">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-retro mb-4">
             <span className="text-primary">Get In</span> <span className="text-secondary">Touch</span>
@@ -40,8 +39,8 @@ const Contact = () => {
                 </span>
               </div>
             </div>
-            
-            <div className="p-8">
+
+            <div className="p-4 md:p-8">
               <div className="terminal p-4 mb-6">
                 <div className="text-terminal text-sm">$ ./send_message --to developer</div>
                 <div className="text-amber text-sm">Initializing secure communication...</div>
@@ -50,31 +49,31 @@ const Contact = () => {
               <form className="space-y-6">
                 <div className="space-y-2">
                   <label className="text-sm font-mono text-terminal">Name:</label>
-                  <Input 
-                    placeholder="John Doe" 
+                  <Input
+                    placeholder="John Doe"
                     className="font-mono bg-muted border-border focus:border-primary"
                   />
                 </div>
-                
+
                 <div className="space-y-2">
                   <label className="text-sm font-mono text-terminal">Email:</label>
-                  <Input 
-                    type="email" 
-                    placeholder="john@example.com" 
+                  <Input
+                    type="email"
+                    placeholder="john@example.com"
                     className="font-mono bg-muted border-border focus:border-primary"
                   />
                 </div>
-                
+
                 <div className="space-y-2">
                   <label className="text-sm font-mono text-terminal">Message:</label>
-                  <Textarea 
-                    placeholder="Hello! I'd like to discuss a project..." 
+                  <Textarea
+                    placeholder="Hello! I'd like to discuss a project..."
                     rows={5}
                     className="font-mono bg-muted border-border focus:border-primary resize-none"
                   />
                 </div>
-                
-                <Button className="w-full retro-button flex items-center justify-center gap-2">
+
+                <Button className="w-full retro-button flex items-center justify-center gap-2" >
                   <Send className="w-4 h-4" />
                   Send Message
                 </Button>
@@ -90,9 +89,9 @@ const Contact = () => {
                 <div className="text-terminal">$ whoami --contact</div>
                 <div className="text-amber">Available for new opportunities</div>
                 <div className="text-terminal">$ location</div>
-                <div className="text-amber">Remote / Your City</div>
+                <div className="text-amber">Bilbao, Spain / Remote</div>
                 <div className="text-terminal">$ timezone</div>
-                <div className="text-amber">UTC-5 (EST)</div>
+                <div className="text-amber">GMT+2</div>
                 <div className="text-terminal">$ preferred_contact</div>
                 <div className="text-amber">Email, LinkedIn, or GitHub</div>
                 <div className="text-terminal terminal-cursor">$ </div>
@@ -102,9 +101,10 @@ const Contact = () => {
             {/* Social Links */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {socialLinks.map((social) => (
-                <Card 
+                <Card
                   key={social.label}
                   className="p-6 pixel-hover cursor-pointer bg-card border-border hover:border-primary transition-colors"
+                  onClick={() => window.open(social.href, '_blank')}
                 >
                   <div className="flex items-center space-x-4">
                     <social.icon className="w-6 h-6 text-primary" />
@@ -135,7 +135,7 @@ const Contact = () => {
                   </span>
                 </div>
               </div>
-              
+
               <div className="terminal p-6">
                 <div className="space-y-2 text-sm">
                   <div className="text-terminal">$ echo "Let's connect!"</div>

@@ -45,18 +45,18 @@ const Projects = () => {
 
   return (
     <section className="py-12 max-w-7xl mx-auto sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" id="projects">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-2 sm:px-4">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-retro mb-4">
             <span className="text-primary">Featured</span> <span className="text-secondary">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground font-mono max-w-2xl mx-auto text-sm lg:text-base">
-            A collection of projects that blend retro aesthetics with modern functionality
+            Coming Soon..
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        {/* <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <div
               key={project.title}
@@ -76,7 +76,7 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div className="p-8">
+              <div className="p-4 md:p-8">
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-3">
                     <h3 className="text-xl font-retro font-bold text-terminal">
@@ -118,15 +118,24 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="text-center mt-12">
           <div className="terminal inline-block p-6">
             <div className="text-terminal mb-2">$ ls ~/more-projects</div>
-            <div className="text-amber mb-4">Found 12+ additional repositories...</div>
-            <Button className="retro-button">
-              <Github className="w-4 h-4 mr-2" />
-              View All on GitHub
+            <div className="text-amber mb-4">Found additional repositories...</div>
+            <Button
+              className="retro-button"
+              asChild
+            >
+              <a
+                href="https://github.com/unaibermudez?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="w-4 h-4 mr-2" />
+                View All on GitHub
+              </a>
             </Button>
           </div>
         </div>

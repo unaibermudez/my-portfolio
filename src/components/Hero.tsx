@@ -6,7 +6,14 @@ import heroImage from "@/assets/retro-hero.jpg";
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "> Hello, I'm a developer_";
+  const fullText = "> Hello, I'm Unai Bermudez_";
+
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -26,7 +33,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroImage})` }}
       />
 
-      <div className="container max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 px-2 sm:px-4">
+      <div className="container max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 px-2 sm:px-6">
         {/* Left Column - Text Content */}
         <div className="space-y-6 lg:space-y-8 animate-fade-in-up text-center lg:text-left">
           <div className="space-y-4">
@@ -45,15 +52,21 @@ const Hero = () => {
 
           <div className="space-y-4 lg:space-y-6">
             <p className="text-base lg:text-lg text-muted-foreground font-mono leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Crafting digital experiences with the precision of classic
-              computing and the innovation of modern development.
+              Passionate about creating robust, user-friendly applications with modern technologies and strong engineering principles.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button className="retro-button pixel-hover">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mx-6 md:mx-0">
+              <Button
+                className="retro-button pixel-hover"
+                onClick={() => scrollToSection('#projects')}
+              >
                 View Projects
               </Button>
-              <Button variant="outline" className="font-mono">
+              <Button
+                variant="outline"
+                className="font-mono"
+                onClick={() => scrollToSection('#contact')}
+              >
                 Contact Me
               </Button>
             </div>
@@ -62,7 +75,7 @@ const Hero = () => {
 
         {/* Right Column - Retro Computer Window */}
         <div
-          className="animate-fade-in-up order-first lg:order-last"
+          className="animate-fade-in-up order-last"
           style={{ animationDelay: "0.3s" }}
         >
           <div className="mac-window max-w-lg sm:max-w-md mx-auto">
@@ -81,12 +94,12 @@ const Hero = () => {
 
             <div className="terminal min-h-[250px] sm:min-h-[300px] space-y-1 sm:space-y-2 text-xs sm:text-sm">
               <div className="text-terminal">$ whoami</div>
-              <div className="text-amber">Full Stack Developer</div>
+              <div className="text-amber">Junior Full Stack Developer</div>
               <div className="text-terminal">$ ls skills/</div>
-              <div className="text-amber">React TypeScript Node.js Python</div>
+              <div className="text-amber"> React TypeScript Java SpringBoot Python</div>
               <div className="text-terminal">$ cat experience.txt</div>
               <div className="text-amber">
-                5+ years building web applications
+                1+ years building web applications
               </div>
               <div className="text-terminal">$ ./portfolio --show-projects</div>
               <div className="text-amber">Loading projects...</div>
